@@ -1,0 +1,211 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Evidence portfolio – site.json",
+  "description": "Everything on the page comes from this file. Missing/empty content is simply not shown. Never put names, phone numbers, e-mails or addresses of other people here.",
+  "type": "object",
+  "required": ["profile", "stats", "cartoons", "school", "activities", "outcomes", "gallery", "posts", "documents", "organisations", "footer"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "properties": { "title": { "type": "string" }, "description": { "type": "string" } }
+    },
+    "profile": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "eyebrow": { "type": "string", "description": "Small line above the name." },
+        "location": { "type": "string" },
+        "tagline": { "type": "string" },
+        "tagline_bn": { "type": "string", "description": "Optional Bangla version." },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title"],
+            "properties": { "title": { "type": "string" }, "org": { "type": "string" }, "since": { "type": "string" } }
+          }
+        },
+        "theme_label": { "type": "string" },
+        "theme": { "type": "string" },
+        "portrait": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/image" }] }
+      }
+    },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "footnote": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "size": { "enum": ["l", "m", "xl"], "description": "l = half width, m = third, xl = full width." },
+              "qualifier": { "type": "string", "description": "Small word above the number, e.g. \"about\"." },
+              "prefix": { "type": "string" },
+              "value": { "type": "number" },
+              "suffix": { "type": "string" },
+              "label": { "type": "string" },
+              "detail": { "type": "string" },
+              "breakdown": {
+                "type": "array",
+                "description": "Parts shown as a proportional bar + legend.",
+                "items": { "type": "object", "required": ["label", "value"], "properties": { "label": { "type": "string" }, "value": { "type": "number" } } }
+              },
+              "multi": {
+                "type": "array",
+                "description": "Several numbers in one card (instead of value).",
+                "items": { "type": "object", "required": ["value", "label"], "properties": { "value": { "type": "number" }, "prefix": { "type": "string" }, "suffix": { "type": "string" }, "label": { "type": "string" } } }
+              }
+            }
+          }
+        }
+      }
+    },
+    "cartoons": {
+      "type": "object",
+      "properties": {
+        "heading": { "type": "string" },
+        "count": { "type": "integer", "description": "Total number of cartoons made (the grid may show fewer)." },
+        "intro": { "type": "string" },
+        "intro_bn": { "type": "string" },
+        "page_url": { "type": ["string", "null"], "description": "Link to the VDF Mymensingh Facebook page." },
+        "page_label": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string" },
+              "title_bn": { "type": "string" },
+              "date": { "type": "string" },
+              "poster": { "type": "string", "description": "Thumbnail, e.g. assets/posters/cartoon-01.webp" },
+              "thumb": { "type": "string", "description": "Optional smaller thumbnail used in the grid." },
+              "video": { "type": "string", "description": "Optional local clip, e.g. assets/cartoons/cartoon-01.mp4 (plays in the viewer)." },
+              "facebook_url": { "type": "string", "format": "uri", "pattern": "^https?://" }
+            }
+          }
+        }
+      }
+    },
+    "school": {
+      "type": "object",
+      "properties": {
+        "heading": { "type": "string" },
+        "summary": { "type": "string" },
+        "summary_bn": { "type": "string" },
+        "facts": { "type": "array", "items": { "type": "object", "required": ["value"], "properties": { "value": { "type": "string" }, "label": { "type": "string" } } } },
+        "permission_document": { "type": ["string", "null"], "description": "id of an entry in documents (the school's written permission)." },
+        "photo": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/image" }] },
+        "survey": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "percent": { "type": "number", "minimum": 0, "maximum": 100 },
+            "statement": { "type": "string" },
+            "respondents": { "type": ["integer", "null"], "description": "How many students answered (shown only if set)." },
+            "note": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "activities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "title_bn": { "type": "string" },
+          "summary": { "type": "string" },
+          "summary_bn": { "type": "string" },
+          "facts": { "type": "array", "items": { "type": "string" }, "description": "Short tags: numbers, place, organiser." },
+          "link": { "type": ["string", "null"], "pattern": "^https?://" },
+          "link_label": { "type": "string" },
+          "photo": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/image" }] }
+        }
+      }
+    },
+    "outcomes": {
+      "type": "object",
+      "properties": {
+        "intro": { "type": "string" },
+        "items": { "type": "array", "items": { "type": "object", "required": ["text"], "properties": { "count": { "type": "integer" }, "text": { "type": "string" } } } }
+      }
+    },
+    "gallery": { "type": "array", "items": { "$ref": "#/definitions/galleryItem" } },
+    "posts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url"],
+        "properties": {
+          "platform": { "type": "string", "description": "Facebook, LinkedIn…" },
+          "source": { "type": "string", "description": "Who posted it, e.g. VDF Mymensingh." },
+          "title": { "type": "string" },
+          "title_bn": { "type": "string" },
+          "url": { "type": "string", "pattern": "^https?://" },
+          "date": { "type": "string" },
+          "views": { "type": "integer", "minimum": 0 },
+          "reactions": { "type": "integer", "minimum": 0 },
+          "comments": { "type": "integer", "minimum": 0 },
+          "image": { "$ref": "#/definitions/image" }
+        }
+      }
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "file", "redacted"],
+        "properties": {
+          "id": { "type": "string" },
+          "kind": { "type": "string", "description": "Permission letter, Organisation letter, Certificate…" },
+          "title": { "type": "string" },
+          "title_bn": { "type": "string" },
+          "file": { "type": "string", "description": "assets/docs/NAME.webp or NAME.pdf" },
+          "thumb": { "type": "string" },
+          "note": { "type": "string" },
+          "redacted": { "const": true, "description": "Must be true. Set it only after covering names, phone numbers, addresses and signatures of anyone but you. Otherwise the document stays hidden." }
+        }
+      }
+    },
+    "organisations": {
+      "type": "array",
+      "items": { "type": "object", "required": ["name"], "properties": { "name": { "type": "string" }, "role": { "type": "string" } } }
+    },
+    "footer": { "type": "string" }
+  },
+  "definitions": {
+    "image": {
+      "type": "object",
+      "required": ["src", "people_under_18"],
+      "properties": {
+        "src": { "type": "string", "description": "e.g. assets/photos/name.webp" },
+        "thumb": { "type": "string", "description": "e.g. assets/photos/name.thumb.webp (made by optimize_images.py)" },
+        "alt": { "type": "string", "description": "Describe what is happening. Never name people." },
+        "people_under_18": { "type": "boolean", "description": "true if any person under 18 is visible. Required." },
+        "faces_blurred": { "type": "boolean", "description": "Must be true when people_under_18 is true, otherwise the photo is not shown." }
+      },
+      "if": { "properties": { "people_under_18": { "const": true } }, "required": ["people_under_18"] },
+      "then": { "required": ["faces_blurred"], "properties": { "faces_blurred": { "const": true } } }
+    },
+    "galleryItem": {
+      "allOf": [
+        { "$ref": "#/definitions/image" },
+        {
+          "type": "object",
+          "required": ["caption"],
+          "properties": {
+            "caption": { "type": "string", "description": "Describes the activity, not individuals." },
+            "caption_bn": { "type": "string" },
+            "date": { "type": "string" }
+          }
+        }
+      ]
+    }
+  }
+}

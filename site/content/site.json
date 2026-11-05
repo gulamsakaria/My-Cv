@@ -1,0 +1,206 @@
+{
+  "$schema": "./site.schema.json",
+
+  "meta": {
+    "title": "Gulam Sakaria – Volunteer evidence portfolio",
+    "description": "Evidence portfolio of Gulam Sakaria, Mymensingh, Bangladesh: teaching AI skills and online safety to young people. Prepared for the National Volunteer Award 2026."
+  },
+
+  "profile": {
+    "name": "Gulam Sakaria",
+    "eyebrow": "National Volunteer Award 2026 · VSO Bangladesh · Evidence portfolio",
+    "location": "Mymensingh, Bangladesh",
+    "tagline": "Teaching AI skills and online safety to young people in Mymensingh.",
+    "roles": [
+      {
+        "title": "IT Secretary",
+        "org": "National Youth Forum (NYF) Mymensingh District"
+      },
+      {
+        "title": "Vice President-2 (Activities & Management)",
+        "org": "Volunteer Development Forum (VDF) Mymensingh",
+        "since": "1 September 2026"
+      }
+    ],
+    "theme_label": "Award theme",
+    "theme": "Inclusive Education and Skills",
+    "portrait": null
+  },
+
+  "stats": {
+    "footnote": "All figures are estimates. Sources are linked in the evidence wall below.",
+    "items": [
+      {
+        "id": "reached",
+        "size": "l",
+        "value": 415,
+        "label": "people reached directly",
+        "breakdown": [
+          { "label": "School students", "value": 215 },
+          { "label": "In online workshops", "value": 140 },
+          { "label": "In agriculture workshops", "value": 60 }
+        ]
+      },
+      {
+        "id": "women-girls",
+        "size": "l",
+        "value": 57,
+        "suffix": "%",
+        "label": "women and girls",
+        "breakdown": [
+          { "label": "Women and girls", "value": 238 },
+          { "label": "Men and boys", "value": 177 }
+        ]
+      },
+      {
+        "id": "workshops",
+        "size": "m",
+        "value": 4,
+        "label": "online workshops",
+        "detail": "on AI and cyberbullying"
+      },
+      {
+        "id": "cartoons",
+        "size": "m",
+        "value": 25,
+        "label": "awareness cartoon videos",
+        "detail": "for VDF Mymensingh"
+      },
+      {
+        "id": "hours",
+        "size": "m",
+        "qualifier": "about",
+        "value": 5,
+        "label": "volunteering hours per week"
+      },
+      {
+        "id": "posts",
+        "size": "xl",
+        "label": "across five volunteer posts",
+        "multi": [
+          { "value": 27400, "suffix": "+", "label": "views" },
+          { "value": 2600, "suffix": "+", "label": "reactions" },
+          { "value": 350, "suffix": "+", "label": "comments" }
+        ]
+      }
+    ]
+  },
+
+  "cartoons": {
+    "heading": "25 awareness cartoon videos for VDF Mymensingh",
+    "count": 25,
+    "intro": "This is my main contribution: a series of 25 awareness cartoon videos for VDF Mymensingh. Each thumbnail below links to its post on the VDF Mymensingh Facebook page, and some clips can also be played here.",
+    "page_url": null,
+    "page_label": "VDF Mymensingh on Facebook",
+    "items": []
+  },
+
+  "school": {
+    "heading": "Radhakanai High School, Fulbaria",
+    "summary": "One session with about 215 students. Students learned how AI creates pictures and how to tell fake from real. The session was held with written permission from the school authorities.",
+    "facts": [
+      { "value": "1", "label": "session" },
+      { "value": "about 215", "label": "students" },
+      { "value": "all under 18", "label": "age" },
+      { "value": "about 55%", "label": "girls" }
+    ],
+    "permission_document": null,
+    "photo": null,
+    "survey": {
+      "title": "Survey result",
+      "percent": 70,
+      "statement": "of students said they easily believe a false news story seen on Facebook or social media.",
+      "respondents": null,
+      "note": null
+    }
+  },
+
+  "activities": [
+    {
+      "id": "online-workshops",
+      "title": "Online workshops on AI use and cyberbullying",
+      "summary": "Four online workshops on AI use and cyberbullying.",
+      "facts": ["4 workshops", "about 140 participants", "Online"],
+      "photo": null
+    },
+    {
+      "id": "agroecology",
+      "title": "Agroecology workshop, Fulbaria",
+      "summary": "A workshop for young people on AI in agriculture: weather forecasting, soil analysis and early detection of crop disease. Certificates were given to participants.",
+      "facts": ["about 40 young participants", "Fulbaria", "Certificates given"],
+      "photo": null
+    },
+    {
+      "id": "climate-leadership",
+      "title": "Speaker: Climate Leadership and Civic Engagement for Community Resilience",
+      "summary": "I spoke at the workshop \"Climate Leadership and Civic Engagement for Community Resilience\".",
+      "facts": ["Speaker", "Sapla Resource Development Center"],
+      "photo": null
+    },
+    {
+      "id": "women-employment",
+      "title": "Women's employment training, Bakta village",
+      "summary": "At a women's employment training I showed how to use AI for design, and I joined the handicraft activity.",
+      "facts": ["Bakta village, Fulbaria", "AI for design", "Handicraft activity"],
+      "photo": null
+    },
+    {
+      "id": "eid-clothes",
+      "title": "Eid clothes for 20 children",
+      "summary": "Eid clothes for 20 children through NYF's \"Alokito Shishu Prokolpo\".",
+      "facts": ["20 children", "National Youth Forum (NYF)"],
+      "photo": null
+    },
+    {
+      "id": "radha-sundari",
+      "title": "School event, Radha Sundari Girls' High School",
+      "summary": "A school event at Radha Sundari Girls' High School.",
+      "facts": ["Radha Sundari Girls' High School"],
+      "photo": null
+    },
+    {
+      "id": "badrakanda-website",
+      "title": "Free website for Badrakanda High School",
+      "summary": "I built a website for Badrakanda High School as a volunteer, through StratifyX Global. No payment was received.",
+      "facts": ["Volunteer work", "Through StratifyX Global", "No payment"],
+      "photo": null
+    },
+    {
+      "id": "reliefx",
+      "title": "ReliefX: open-source flood-relief distribution system",
+      "summary": "An open-source system for distributing flood relief. It began as a university assignment and was recognised by VDF.",
+      "facts": ["Open source", "Began as a university assignment", "Recognised by VDF"],
+      "link": null,
+      "photo": null
+    },
+    {
+      "id": "planning-meetings",
+      "title": "Youth planning meetings",
+      "summary": "Youth planning meetings, held both in person and online.",
+      "facts": ["In person", "Online"],
+      "photo": null
+    }
+  ],
+
+  "outcomes": {
+    "intro": "Outcomes are anonymous. No names or identifying details are shown.",
+    "items": [
+      { "count": 1, "text": "participant now works as a graphic designer" },
+      { "count": 1, "text": "participant now works as a website developer" },
+      { "count": 2, "text": "participants protected themselves from cyberbullying after the sessions" }
+    ]
+  },
+
+  "gallery": [],
+  "posts": [],
+  "documents": [],
+
+  "organisations": [
+    { "name": "National Youth Forum (NYF) Mymensingh District", "role": "IT Secretary" },
+    { "name": "Volunteer Development Forum (VDF) Mymensingh", "role": "Vice President-2 (Activities & Management), since 1 September 2026" },
+    { "name": "VSO Bangladesh" },
+    { "name": "Protigga Youth Organization" }
+  ],
+
+  "footer": "Prepared for the National Volunteer Award 2026. References are provided in the application form and are not published here."
+}

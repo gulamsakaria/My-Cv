@@ -1,0 +1,89 @@
+{
+  "_README": "EXAMPLE ENTRIES ONLY. Copy an entry into the matching list in site/content/site.json, then replace every value with your own real data. All numbers here are 0 on purpose. This file is not published.",
+
+  "cartoons.items": [
+    {
+      "title": "Short title of the cartoon (what it teaches)",
+      "title_bn": "বাংলা শিরোনাম (ঐচ্ছিক)",
+      "poster": "assets/posters/cartoon-01.webp",
+      "video": "assets/cartoons/cartoon-01.mp4",
+      "facebook_url": "https://www.facebook.com/.../posts/...",
+      "date": "March 2026"
+    },
+    {
+      "title": "A cartoon that is only on Facebook (no local video)",
+      "poster": "assets/posters/cartoon-02.webp",
+      "facebook_url": "https://www.facebook.com/.../posts/..."
+    }
+  ],
+
+  "gallery": [
+    {
+      "src": "assets/photos/agroecology-workshop-01.webp",
+      "thumb": "assets/photos/agroecology-workshop-01.thumb.webp",
+      "alt": "Participants seated in a hall while a slide about weather forecasting is shown",
+      "caption": "Agroecology workshop, Fulbaria: session on AI in agriculture",
+      "caption_bn": "বাংলা ক্যাপশন (ঐচ্ছিক)",
+      "date": "2026",
+      "people_under_18": false
+    },
+    {
+      "src": "assets/photos/school-session-01.webp",
+      "thumb": "assets/photos/school-session-01.thumb.webp",
+      "alt": "A classroom during the session, faces blurred",
+      "caption": "Radhakanai High School: session on how AI creates pictures",
+      "people_under_18": true,
+      "faces_blurred": true
+    }
+  ],
+
+  "posts": [
+    {
+      "platform": "Facebook",
+      "source": "VDF Mymensingh",
+      "title": "What the post is about, in one line",
+      "url": "https://www.facebook.com/.../posts/...",
+      "date": "2026-03-14",
+      "views": 0,
+      "reactions": 0,
+      "comments": 0,
+      "image": { "src": "assets/posters/post-01.webp", "alt": "Screenshot of the post", "people_under_18": false }
+    },
+    {
+      "platform": "LinkedIn",
+      "title": "Another post",
+      "url": "https://www.linkedin.com/posts/...",
+      "views": 0,
+      "reactions": 0,
+      "comments": 0
+    }
+  ],
+
+  "documents": [
+    {
+      "id": "school-permission",
+      "kind": "Permission letter",
+      "title": "Written permission from Radhakanai High School",
+      "file": "assets/docs/school-permission.webp",
+      "note": "Names, phone numbers and signatures of other people are hidden.",
+      "redacted": true
+    },
+    {
+      "id": "certificate-1",
+      "kind": "Certificate",
+      "title": "Name of the certificate",
+      "file": "assets/docs/certificate-1.pdf",
+      "thumb": "assets/docs/certificate-1.thumb.webp",
+      "redacted": true
+    }
+  ],
+
+  "activities[n].photo (optional, inside any activity)": {
+    "src": "assets/photos/example.webp",
+    "alt": "Describe what is happening",
+    "people_under_18": false
+  },
+
+  "school.permission_document": "school-permission   <- the id of a document above; adds a 'View the written permission' link in the school section",
+  "profile.portrait": { "src": "assets/photos/portrait.webp", "alt": "Portrait of Gulam Sakaria", "people_under_18": false }
+}

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gulam Sakaria – Volunteer evidence portfolio</title>
+<meta name="description" content="Evidence portfolio of Gulam Sakaria, Mymensingh, Bangladesh: teaching AI skills and online safety to young people. Prepared for the National Volunteer Award 2026.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#FBF7F1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1226" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gulam Sakaria – Volunteer evidence portfolio">
+<meta property="og:description" content="Teaching AI skills and online safety to young people in Mymensingh. Prepared for the National Volunteer Award 2026.">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<!-- site-url:start (filled in by scripts/set_site_url.py once you know your public address) -->
+<!-- site-url:end -->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23A8007A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='700' text-anchor='middle' fill='%23fff'%3EG%3C/text%3E%3C/svg%3E">
+
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preload" href="content/site.json" as="fetch" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Noto+Sans+Bengali:wght@400;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Noto+Sans+Bengali:wght@400;600&display=swap"></noscript>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">Gulam Sakaria</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#cartoons">Cartoons</a></li>
+        <li><a href="#school">School</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#outcomes">Outcomes</a></li>
+        <li><a href="#evidence">Evidence</a></li>
+        <li><a href="#organisations">Organisations</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 1. HERO -->
+  <section class="hero" id="top" aria-labelledby="name">
+    <div class="hero-shape" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow" id="hero-eyebrow"></p>
+        <h1 id="name" class="name">Gulam Sakaria</h1>
+        <p class="tagline" id="hero-tagline"></p>
+        <p class="tagline-bn bn" id="hero-tagline-bn" lang="bn" hidden></p>
+        <ul class="chips" id="hero-roles" aria-label="Current roles"></ul>
+        <p class="badge-row" id="hero-theme"></p>
+      </div>
+      <div class="hero-portrait" id="hero-portrait"></div>
+    </div>
+  </section>
+
+  <!-- 2. IMPACT -->
+  <section class="band" id="impact" aria-labelledby="impact-h" hidden>
+    <div class="wrap">
+      <header class="sec-head"><p class="kicker">01 · Impact at a glance</p><h2 id="impact-h">The numbers, in context</h2></header>
+      <div class="stats" id="stats"></div>
+      <p class="note" id="stats-note"></p>
+    </div>
+  </section>
+
+  <!-- 3. CARTOONS -->
+  <section class="sec" id="cartoons" aria-labelledby="cartoons-h" hidden>
+    <div class="wrap">
+      <header class="sec-head"><p class="kicker">02 · Main contribution</p><h2 id="cartoons-h"></h2></header>
+      <div class="cartoon-intro" id="cartoons-intro"></div>
+      <ul class="cartoon-grid" id="cartoon-grid"></ul>
+      <p class="note" id="cartoons-note"></p>
+    </div>
+  </section>
+
+  <!-- 4. SCHOOL -->
+  <section class="sec sec--alt" id="school" aria-labelledby="school-h" hidden>
+    <div class="wrap">
+      <header class="sec-head"><p class="kicker">03 · School session and survey</p><h2 id="school-h"></h2></header>
+      <div class="school-grid" id="school-body"></div>
+    </div>
+  </section>
+
+  <!-- 5. ACTIVITIES -->
+  <section class="sec" id="activities" aria-labelledby="activities-h" hidden>
+    <div class="wrap">
+      <header class="sec-head"><p class="kicker">04 · Activities</p><h2 id="activities-h">What I did</h2></header>
+      <ul class="cards" id="activity-grid"></ul>
+    </div>
+  </section>
+
+  <!-- 6. OUTCOMES -->
+  <section class="band band--magenta" id="outcomes" aria-labelledby="outcomes-h" hidden>
+    <div class="wrap">
+      <header class="sec-head"><p class="kicker">05 · What changed</p><h2 id="outcomes-h">What changed for participants</h2></header>
+      <p class="lead" id="outcomes-intro"></p>
+      <ul class="outcomes" id="outcome-list"></ul>
+    </div>
+  </section>
+
+  <!-- 7. EVIDENCE WALL -->
+  <section class="sec" id="evidence" aria-labelledby="evidence-h" hidden>
+    <div class="wrap">
+      <header class="sec-head"><p class="kicker">06 · Evidence wall</p><h2 id="evidence-h">Photos, posts and documents</h2></header>
+
+      <div class="ev-block" id="gallery-block" hidden>
+        <h3 id="gallery-h">Photo gallery</h3>
+        <ul class="gallery" id="gallery" aria-labelledby="gallery-h"></ul>
+      </div>
+      <div class="ev-block" id="posts-block" hidden>
+        <h3 id="posts-h">Original posts</h3>
+        <ul class="posts" id="posts" aria-labelledby="posts-h"></ul>
+      </div>
+      <div class="ev-block" id="docs-block" hidden>
+        <h3 id="docs-h">Documents</h3>
+        <ul class="docs" id="docs" aria-labelledby="docs-h"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. ORGANISATIONS -->
+  <section class="sec sec--alt" id="organisations" aria-labelledby="orgs-h" hidden>
+    <div class="wrap">
+      <header class="sec-head"><p class="kicker">07 · Organisations</p><h2 id="orgs-h">Organisations</h2></header>
+      <ul class="orgs" id="org-list"></ul>
+    </div>
+  </section>
+</main>
+
+<!-- 9. FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <p id="footer-text"></p>
+  </div>
+</footer>
+
+<noscript><p class="wrap noscript">This portfolio loads its content from <code>content/site.json</code> and needs JavaScript to display it.</p></noscript>
+<div class="wrap load-error" id="load-error" role="alert" hidden></div>
+
+<dialog class="lb" id="lightbox" aria-label="Media viewer">
+  <div class="lb-inner">
+    <button class="lb-btn lb-close" type="button" aria-label="Close viewer">×</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous item">‹</button>
+    <button class="lb-btn lb-next" type="button" aria-label="Next item">›</button>
+    <div class="lb-media" id="lb-media"></div>
+    <div class="lb-cap" aria-live="polite">
+      <p id="lb-caption"></p>
+      <p id="lb-caption-bn" class="bn" lang="bn"></p>
+      <p id="lb-count" class="lb-count"></p>
+    </div>
+  </div>
+</dialog>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>

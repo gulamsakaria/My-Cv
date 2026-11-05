@@ -1,0 +1,7 @@
+# Raw / un-blurred / un-optimised photos must NEVER be committed or published.
+originals/
+*.heic
+*.HEIC
+.DS_Store
+__pycache__/
+*.pyc

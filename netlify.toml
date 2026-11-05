@@ -1,0 +1,4 @@
+# Only needed when Netlify builds from the Git repository.
+# For drag-and-drop, just drop the "site" folder - this file is not needed.
+[build]
+  publish = "site"
